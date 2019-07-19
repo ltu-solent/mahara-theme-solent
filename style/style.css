@@ -28295,6 +28295,10 @@ body.loggedout .main-content #messages .alert:nth-child(3) {
   border-bottom: 3px solid lightgrey;
 }
 
+.row-fluid {
+  display: flex;
+}
+
 @media only screen and (max-width: 1494px) {
   .grid-bottom {
     min-height: 220px;
