@@ -1,0 +1,32 @@
+.grid-top{
+	background-repeat: no-repeat;
+	min-height: 160px;width: 100%;
+	background-size: cover;
+	position:relative;
+	overflow: hidden;
+}
+
+.grid-bottom{
+	background-color: #F4F4F4;
+	min-height: 170px;
+	padding: 0 10px 10px 10px;
+	border-bottom: 3px solid lightgrey;
+}
+
+@media only screen and (max-width: 1494px) {
+    .grid-bottom{
+		min-height: 220px;
+	}
+}
+
+@media only screen and (max-width: 1052px) {
+    .grid-bottom{
+		min-height: 240px;
+	}
+}
+
+@media only screen and (max-width: 1026px) {
+    .grid-bottom{
+		min-height: 260px;
+	}
+}
