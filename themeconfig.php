@@ -11,9 +11,13 @@
 $theme = new stdClass();
 
 /* Give your new theme a name here */
-$theme->displayname = 'Solent';
+$theme->displayname = 'Sub Theme Starter kit';
 
 /* Set parent to boolean FALSE to specify the theme has no parent */
+/* If your parent theme is a subtheme, for example Modern, Default, Ocean, or Primaryschool,
+you will need to uncomment the import lines with the path "../../<your parent theme name>/sass
+in sass/style.scss and change the value <your parent theme name> to the folder name of the
+subtheme that you use as basis. */
 $theme->parent = 'raw';
 
 /* If we are using normal CSS, this should be false. If we are using SASS, it should be true. */
