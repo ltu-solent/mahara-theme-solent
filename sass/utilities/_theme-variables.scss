@@ -3,10 +3,10 @@
  */
 
 //$theme-primary-color: #556d32;
-$theme-primary-color: #777;
-$theme-primary-color-dark: #2e3a1c;
-$theme-text-color:  #333;
-$theme-text-midtone-color: #666;
-$theme-text-lighttone-color: #767676;
+$theme-primary-color: #777 !default;
+$theme-primary-color-dark: #2e3a1c !default;
+$theme-text-color:  #333 !default;
+$theme-text-midtone-color: #666 !default;
+$theme-text-lighttone-color: #767676 !default;
 
-$theme-accent-color:  #423017; // note this currently isn't used anywhere in raw
+$theme-accent-color:  #423017 !default; // note this currently isn't used anywhere in raw
