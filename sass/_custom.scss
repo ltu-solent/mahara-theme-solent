@@ -234,6 +234,10 @@ a:hover, a:focus {
 	display: inline-block;
 }
 
+.modal-backdrop {
+    z-index: 1030 !important;
+}
+
 /* #blocksinstruction  */
 form .col-with-collapse:before{
   content: 'Drag and drop content blocks here';
