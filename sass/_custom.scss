@@ -54,9 +54,9 @@ html{
 	}
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .panel-secondary>.panel-heading, .table td h3,
-.collapsible legend h3, .collapsible legend h4, .panel-heading, input[type=search]{
-    font-family: "OpenSans-Semi";
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .card-secondary>.card-header, .table td h3,
+.collapsible legend h3, .collapsible legend h4, .card-header, input[type=search]{
+    font-family: "OpenSans-Semi" !important;
 }
 
 .btn-primary:hover {
