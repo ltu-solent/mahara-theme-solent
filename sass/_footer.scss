@@ -1,12 +1,12 @@
 // Generic custom css (anything longer than a screen view should have its own component file)
 .page-wrap{
-	margin: 0 auto;	
+	margin: 0 auto;
     padding-bottom: 25px;
 	min-height: 500px;
 
 }
 
-footer.site-footer { 
+footer.site-footer {
 	height: 400px;
 	position: relative;
 	right: 0;
@@ -28,6 +28,10 @@ footer.site-footer {
     font-size: 15px;
     padding: 60px 0 30px;
     background-color: #3a3b3f;
+}
+
+.footer__title {
+    width: 100%;
 }
 
 .footer--top {
@@ -77,7 +81,7 @@ li > a.footer__item .nav__item{
 	/* padding-top: 65px; */
 	margin-top:0px;
 	/* margin-top: -80px; */
-} 
+}
 
 .row-footer {
     max-width: 75rem;
@@ -94,7 +98,7 @@ li > a.footer__item .nav__item{
 	p.footer__copyright{
 		color: #a8a8a8;
 	}
-	
+
 	ul.vertical{
 		margin: 0;
 		list-style-type: none;
@@ -107,29 +111,29 @@ li > a.footer__item .nav__item{
 		text-align: center;
 		margin-left: 0px;
 	}
-	
+
 	p.footer__copyright{
 		text-align: center;
 	}
-	
+
 	.ssu_logo {
 		margin: auto;
 	}
-	
+
 	.row-footer{
 		padding-left: 15px;
 	}
-	
+
 	footer ul{
 		list-style: none;
 		padding-left: 0px;
 	}
-	
+
 	.footer--top {
 		min-height: 900px;
 		padding-top: 20px;
 	}
-	
+
 	.footer--bottom {
 		min-height: 190px;
 		color: #fff;
@@ -146,26 +150,27 @@ li > a.footer__item .nav__item{
 		width: 50%;
 		float:left;
 	}
-	
+
 	.medium-3 {
 		width: 20%;
 	}
-	
+
 	ul.menu.social-wrap {
 		padding-top: 15px;
 		float: right;
 		padding-right: 15px;
+		margin-left: auto;
 	}
-	
-	.footer--top {		
+
+	.footer--top {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	
+
 	.footer--bottom {
-		padding-left: 20px;		
-		padding-right: 20px;		
-	}	
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 div.logo {
