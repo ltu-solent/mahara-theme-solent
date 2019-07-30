@@ -272,3 +272,9 @@ form .col-with-collapse{
       padding-top: 0 !important;
   }
 }
+
+@media (min-width: 1730px) {
+  .pageheader .main {
+    margin-left: 25px;
+  }
+}
