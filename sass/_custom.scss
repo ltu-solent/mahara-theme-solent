@@ -251,3 +251,24 @@ form .col-with-collapse{
     /* border: 2px dashed #adadad; */
 }
 /* end #blocksinstruction  */
+
+.collection-nav, .pageheader h1 {
+  margin: 0 !important;
+}
+
+.pageheader .main {
+    padding-top: 40px !important;
+    padding-bottom: 25px !important;
+}
+
+.collection-nav h2 {
+    font-size: 20px !important;
+    border: none;
+    padding: 0 !important;
+}
+
+@media (min-width: 768px) {
+  #addblock_blocklegend_container .pieform-fieldset legend, body {
+      padding-top: 0 !important;
+  }
+}
