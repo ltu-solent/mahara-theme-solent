@@ -267,6 +267,21 @@ form .col-with-collapse{
     padding: 0 !important;
 }
 
+.loggedout #page-footer {
+    display: inline-block;
+    width: 100%;
+}
+
+.loggedout .main-content .row {
+    width: 100%;
+    padding-top: 0 !important;
+}
+
+.loggedouthome .main-content .row {
+    width: initial !important;
+    padding-top: initial !important;
+}
+
 @media (min-width: 768px) {
   .no-site-messages~.pageheader {
       margin-top: 0 !important;
