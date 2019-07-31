@@ -257,7 +257,7 @@ form .col-with-collapse{
 }
 
 .pageheader .main {
-    padding-top: 40px !important;
+    padding-top: 20px !important;
     padding-bottom: 25px !important;
 }
 
@@ -268,8 +268,8 @@ form .col-with-collapse{
 }
 
 @media (min-width: 768px) {
-  #addblock_blocklegend_container .pieform-fieldset legend, body {
-      padding-top: 0 !important;
+  .no-site-messages~.pageheader {
+      margin-top: 0 !important;
   }
 }
 
