@@ -19,6 +19,8 @@ $theme->parent = 'raw';
 /* If we are using normal CSS, this should be false. If we are using SASS, it should be true. */
 $theme->overrideparentcss = true;
 
+$theme->themelinkcolor = '#0162a7'; // $view_link_normal_color
+
 /**
  * The following themeconfig options are available. If you make new themeconfig
  * options please add them here and explain what they do.

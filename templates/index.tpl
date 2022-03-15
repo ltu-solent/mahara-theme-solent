@@ -2,8 +2,12 @@
 <div id="login-wrap">
 {/if}
 {include file="header.tpl"}
+{if $USER->is_logged_in()}
 {$page_content|clean_html|safe}
-
+{/if}
+{if !$USER->is_logged_in()}
+<h1>{str tag=loginheader section=mahara arg1=$sitename}</h1>
+{/if}
 {if get_config('homepageinfo') && ($USER->get_account_preference('showhomeinfo'))}
     {include file="homeinfo.tpl" url=$url}
 {/if}

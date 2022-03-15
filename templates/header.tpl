@@ -3,115 +3,161 @@
 <!--[if IE 9 ]><html{if $LANGDIRECTION == 'rtl'} dir="rtl"{/if} lang="{$LANGUAGE}" class="ie ie9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html{if $LANGDIRECTION == 'rtl'} dir="rtl"{/if} lang="{$LANGUAGE}"><!--<![endif]-->
 {include file="header/head.tpl"}
-<body data-usethemedjs="true" class="no-js {if $ADMIN || $INSTITUTIONALADMIN || $STAFF || $INSTITUTIONALSTAFF}admin{/if} {if $loggedout}loggedout{/if} {if $pagename}{$pagename}{/if}">
+<body data-usethemedjs="true" class="no-js {if $ADMIN || $INSTITUTIONALADMIN || $STAFF || $INSTITUTIONALSTAFF}admin{/if} {if $loggedout}loggedout{/if} {if $pagename}{$pagename}{/if} {$presentation|default:'window'}">
     <div class="skiplink btn-group btn-group-top">
-        <a class="sr-only sr-only-focusable btn btn-default" href="#main">{str tag=skipmenu}</a>
+        <a class="sr-only sr-only-focusable btn btn-secondary" {if $headertype=='page'}href="#header-target-main"{else}href="#header-main"{/if}>{str tag=skipmenu}</a>
     </div>
 
     {if $USERMASQUERADING || !$PRODUCTIONMODE || $SITECLOSED || $SITETOP}
-        <div class="site-messages text-center">
+        <div class="site-messages">
     {/if}
 
-        {if $USERMASQUERADING}
-            <div class="site-message alert alert-warning" role="alert">
-                <span class="icon icon-lg icon-exclamation-triangle left" role="presentation" aria-hidden="true"></span>
+    {if $USERMASQUERADING}
+        <div class="site-message alert alert-warning" role="alert">
+            <div class="container">
                 <span>{$masqueradedetails}</span>
                 <a href="{$becomeyoulink}">{$becomeyouagain}</a>
             </div>
-        {/if}
-        {if !$PRODUCTIONMODE}
-            <div class="site-message alert alert-info" role="alert">
-                <span class="icon icon-lg icon-info-circle left" role="presentation" aria-hidden="true"></span>
+        </div>
+    {/if}
+    {if !$PRODUCTIONMODE}
+        <div class="site-message alert alert-info" role="alert">
+            <div class="container">
                 {str tag=notproductionsite section=error}
             </div>
-        {/if}
-        {if $SITEOUTOFSYNC}
-            <div class="site-message alert alert-warning" role="alert">
-                <span class="icon icon-lg icon-info-circle left" role="presentation" aria-hidden="true"></span>
+        </div>
+    {/if}
+    {if $SITEOUTOFSYNC}
+        <div class="site-message alert alert-warning" role="alert">
+            <div class="container">
                 {str tag=siteoutofsyncfor section=error arg1=$SITEOUTOFSYNC}
             </div>
-        {/if}
-        {if $SITECLOSED}
-            <div class="site-message alert alert-danger" role="alert">
-                <span class="icon icon-lg icon-lock left" role="presentation" aria-hidden="true"></span>
+        </div>
+    {/if}
+    {if $SITECLOSED}
+        <div class="site-message alert alert-danger" role="alert">
+            <div class="container">
                 {if $SITECLOSED == 'logindisabled'}{str tag=siteclosedlogindisabled section=mahara arg1="`$WWWROOT`admin/upgrade.php"}{else}{str tag=siteclosed}{/if}
             </div>
-        {/if}
-        {if $SITETOP}
-            <div id="switchwrap">{$SITETOP|safe}</div>
-        {/if}
+        </div>
+    {/if}
+    {if $SITETOP}
+       <div id="switchwrap">{$SITETOP|safe}</div>
+    {/if}
 
     {if $USERMASQUERADING || !$PRODUCTIONMODE || $SITECLOSED || $SITETOP}
         </div>
     {/if}
 
-    <header class="header navbar-fixed-top no-site-messages">
+    <header class="header fixed-top no-site-messages">
         <div class="navbar navbar-default navbar-main">
             <div class="container">
                 <div id="logo-area" class="logo-area">
-                    <a href="{$WWWROOT}" class="logo {if $sitelogosmall}change-to-small{/if} ">
-                        <!--<img src="{$sitelogo}" alt="{$sitename}" data-customlogo="{$sitelogocustom}">-->
-						myPortfolio
+                    <a href="{$WWWROOT}" class="logo {if $sitelogocustomsmall || (!$sitelogocustomsmall && !$sitelogocustom)}change-to-small{/if}">
+                        <img src="{$sitelogo}" alt="{$sitename}" data-customlogo="{$sitelogocustom}" >
                     </a>
-                    {if $sitelogosmall}
+                    {if $sitelogocustomsmall}
                         <a href="{$WWWROOT}" class="logoxs">
+                            <img src="{$sitelogocustomsmall}" alt="{$sitename}">
+                        </a>
+                    {/if}
+                    {if !$sitelogocustom && !$sitelogocustomsmall}
+                        <a href="{$WWWROOT}" class="logoxs change-to-small-default">
                             <img src="{$sitelogosmall}" alt="{$sitename}">
                         </a>
                     {/if}
                     {if $ADMIN || $INSTITUTIONALADMIN || $STAFF || $INSTITUTIONALSTAFF}
                         <div class="admin-title">
-                            <a href="{$WWWROOT}admin/" accesskey="a" class="admin-site">{str tag="administration"}</a>
+                            <a href="{$WWWROOT}admin/" class="admin-site">{str tag="administration"}</a>
                         </div>
                     {/if}
-                    <div id="loading-box" class="loading-box hidden"></div>
+                    <div id="loading-box" class="loading-box d-none"></div>
                 </div>
-                    <div class="nav-toggle-area">
-                        {if $MAINNAV}
-                            <button class="main-nav-toggle navbar-toggle collapsed" role="button" data-toggle="collapse" data-target=".nav-main" aria-expanded="false" aria-controls="nav-main" title='{str tag="mainmenu"}'>
-                                <span class="sr-only">{str tag="showmainmenu"}</span>
-                                <span class="icon icon-bars icon-lg" role="presentation" aria-hidden="true"></span>
-                            </button>
-                        {/if}
-                        {if $MAINNAVADMIN}
-                            <button class="admin-toggle navbar-toggle collapsed" role="button" data-toggle="collapse" data-target=".nav-main-admin" aria-expanded="false" aria-controls="nav-main-admin" title='{str tag="adminmenu"}'>
-                                <span class="sr-only">{str tag="showadminmenu"}</span>
-                                <span class="icon icon-wrench icon-large" role="presentation" aria-hidden="true"></span>
-                            </button>
-                        {/if}
-                        {if $LOGGEDIN}
-                            <a href="{profile_url($USER)}" class="user-icon" title='{str tag="profilepage"}'>
-                                <img src="{profile_icon_url user=$USER maxheight=25 maxwidth=25}">
+
+                {include file="header/topright.tpl"}
+
+                <div class="nav-toggle-area">
+                    {if $MAINNAV}
+                        <button class="main-nav-toggle navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".nav-main" aria-expanded="false" aria-controls="main-nav" title='{str tag="mainmenu"}'>
+                            <span class="sr-only">{str tag="showmainmenu"}</span>
+                            <span class="icon icon-bars icon-lg" role="presentation" aria-hidden="true"></span>
+                        </button>
+                    {/if}
+                    {if $MAINNAVADMIN}
+                        <button class="admin-toggle navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".nav-main-admin" aria-expanded="false" aria-controls="main-nav-admin" title='{str tag="adminmenu"}'>
+                            <span class="sr-only">{str tag="showadminmenu"}</span>
+                            <span class="icon icon-wrench icon-lg" role="presentation" aria-hidden="true"></span>
+                        </button>
+                    {/if}
+                    {if $LOGGEDIN}
+                        <div class="user-icon-wrap-toggle navbar-toggle">
+                            <a href="{profile_url($USER)}" class="user-icon user-icon-25" title='{str tag="profilepage"}'>
+                                <img src="{profile_icon_url user=$USER maxheight=25 maxwidth=25}" alt="{str tag=profileimagefor section=artefact.internal arg1=display_name($USER->get('id'))}">
                             </a>
-                            <button class="user-toggle navbar-toggle" role="button" data-toggle="collapse" data-target=".nav-main-user" aria-expanded="false" aria-controls="nav-main-user" title='{str tag="usermenu"}'>
-                                <span class="sr-only">{str tag="showusermenu"}</span>
+                            <button class="user-toggle" type="button" data-toggle="collapse" data-target=".nav-main-user" aria-expanded="false" aria-controls="main-nav-user" title='{str tag="usermenu1"}'>
+                                <span class="sr-only">{str tag="showusermenu1"}</span>
                                 <span class="icon icon-chevron-down collapsed"></span>
                             </button>
-                        {/if}
-                        <!-- HIDE WHEN ON DESKTOP -->
-                        {if !$nosearch && ($LOGGEDIN || $publicsearchallowed)}
-                        <button class="search-toggle navbar-toggle collapsed" role="button" data-toggle="collapse" data-target=".navbar-form" aria-expanded="false" aria-controls="navbar-form">
-                            <span class="icon icon-search icon-lg" role="presentation" aria-hidden="true"></span>
-                            <span class="nav-title sr-only">{str tag="showsearch"}</span>
+                        </div>
+                    {/if}
+                    {if $MESSAGEBOX}
+                        {foreach from=$MESSAGEBOX item=item}
+                        <a href="{$WWWROOT}{$item.url}" title="{$item.alt}" role="button" id="nav-{$item.path}" class="navbar-toggle navbar-messages collapsed">
+                            <span class="sr-only">{$item.title} <span class="{$item.countclasssr}">{$item.unread}</span></span>
+                            <span class="icon icon-{$item.iconclass} icon-lg" role="presentation" aria-hidden="true"></span>
+                            {if $item.count}
+                                <span class="navbar-messages-count">
+                                    <span class="{$item.countclass}">{$item.count}</span>
+                                </span>
+                            {/if}
+                        </a>
+                        {/foreach}
+                    {/if}
+                    {if $LANGCHOICES}
+                        <button class="lang-toggle navbar-toggle" type="button" data-toggle="collapse" data-target=".nav-language" aria-expanded="false" aria-controls="main-language" title='{str tag="chooselanguage"}'>
+                            <span class="sr-only">{str tag="chooselanguage"}</span>
+                            <span class="icon icon-language icon-lg" role="presentation" aria-hidden="true"></span>
                         </button>
-                        {/if}
-                    </div>
-
-                    {include file="header/topright.tpl"}
-                    {include file="header/navigation.tpl"}
+                    {/if}
+                    {if !$nosearch && ($LOGGEDIN || $publicsearchallowed)}
+                    <button class="search-toggle navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-form" aria-expanded="false" aria-controls="usf">
+                        <span class="icon icon-search icon-lg" role="presentation" aria-hidden="true"></span>
+                        <span class="nav-title sr-only">{str tag="showsearch"}</span>
+                    </button>
+                    {/if}
+                </div>
+                {if !$nosearch && ($LOGGEDIN || $publicsearchallowed)}
+                <div class="navbar-form collapse navbar-collapse{if $languageform} with-langform{if !$LOGGEDIN && !$SHOWLOGINBLOCK && !$LOGINPAGE}-login{/if}{/if}">
+                    {header_search_form}
+                </div>
+                {/if}
+                {include file="header/navigation.tpl"}
+                {if $LANGCHOICES}
+                {include file="header/language.tpl"}
+                {/if}
             </div>
         </div>
     </header>
 
+    {if $headertype == "page"}
+        {include file="header/pageheader.tpl"}
+    {elseif $headertype == "profile"}
+        {include file="header/profileheader.tpl"}
+    {elseif $headertype == "matrix" || $headertype == "progresscompletion"}
+        {include file="header/matrixheader.tpl"}
+    {/if}
+
     <div class="container main-content">
         <div class="row">
-            <main id="main" class="{if $SIDEBARS}{if $SIDEBLOCKS.right}col-md-9 {else}col-md-9 col-md-push-3{/if}{else}col-md-12{/if} main">
+            <a id="header-main"></a>
+            <main id="main" class="{if $SIDEBARS}{if $SIDEBLOCKS.right}col-xl-9 {else}col-xl-9 order-md-2 {/if}{else}col-md-12{/if} main">
                 <div id="content" class="main-column{if $selected == 'content'} editcontent{/if}">
                     <div id="main-column-container">
 
                         {if $SUBPAGENAV || $sectiontabs}
                         {assign $SUBPAGENAV item}
                         <div class="arrow-bar {$item.subnav.class}">
-                            <span class="arrow hidden-xs">
+                            <span class="arrow d-none d-md-block">
                                 <span class="text">
                                 {if isset($PAGEHEADINGARROW)}
                                     {$PAGEHEADINGARROW}
@@ -120,9 +166,9 @@
                                 {/if}
                                 </span>
                             </span>
-                            <span class="right-text">
+                            <div class="right-text">
                                 {include file="inpagenav.tpl"}
-                            </span>
+                            </div>
                         </div>
                         {/if}
 
@@ -148,7 +194,7 @@
                                 </span>
                                 {if $PAGEHELPNAME}<span class="page-help-icon">{$PAGEHELPICON|safe}</span>{/if}
                                 {if $publicgroup && $rsswithtitle}
-                                <a href="{$feedlink}" class="mahara-rss-icon text-small pull-right " role="presentation" aria-hidden="true">
+                                <a href="{$feedlink}" class="mahara-rss-icon text-small float-right " role="presentation" aria-hidden="true">
                                     <span class="icon-rss icon icon-lg" role="presentation" aria-hidden="true"></span>
                                 </a>
                                 {/if}
