@@ -32,7 +32,7 @@
 * Then replace partials with your own sass and uncomment the line below
 */
 // @import "utilities/index";
-
+@import "components/contextual-help";
 /** If your parent theme is a subtheme for example, Modern, Default, Primaryschool
 * Please include these lines. If you are compiling SCSS with gulp, you'll need to
 * restart it.*/
