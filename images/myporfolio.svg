@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="650"
+   height="170"
+   viewBox="0 0 650 170"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (76b9e6a115, 2022-02-25)"
+   sodipodi:docname="myporfolio.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     width="480px"
+     inkscape:zoom="0.51586654"
+     inkscape:cx="-92.078079"
+     inkscape:cy="57.185333"
+     inkscape:window-width="1864"
+     inkscape:window-height="1016"
+     inkscape:window-x="1976"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     guidetolerance="20"
+     objecttolerance="20"
+     gridtolerance="10">
+    <sodipodi:guide
+       position="152.83489,92.554517"
+       orientation="0,-1"
+       id="guide32798" />
+    <sodipodi:guide
+       position="281.68224,21.277259"
+       orientation="0,-1"
+       id="guide32800" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 65.497752,118.88138 c 0,1.76102 -1.426351,3.18737 -3.187377,3.18737 H 43.186116 c -1.761026,0 -3.187377,-1.42635 -3.187377,-3.18737 v -9.56213 H 1.7502237 v 28.68639 c 0,5.0998 4.4623246,9.56213 9.5621313,9.56213 H 94.18413 c 5.099812,0 9.56214,-4.46233 9.56214,-9.56213 V 109.31925 H 65.497752 Z M 94.18413,77.445483 H 78.247254 v -9.562127 c 0,-5.099805 -4.462332,-9.56213 -9.562128,-9.56213 H 36.811364 c -5.099803,0 -9.562127,4.462325 -9.562127,9.56213 v 9.562127 H 11.312355 c -5.0998067,0 -9.5621313,4.462329 -9.5621313,9.562127 v 15.93688 H 103.74627 V 87.00761 c 0,-5.099798 -4.462328,-9.562127 -9.56214,-9.562127 z m -28.686378,0 H 39.998739 v -6.374751 h 25.499013 z"
+       id="path63"
+       style="fill:#e30613;fill-opacity:1;stroke:#000000;stroke-width:0.603172;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:96px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="107.20338"
+       y="148.70644"
+       id="text6281"><tspan
+         sodipodi:role="line"
+         id="tspan6279"
+         x="107.20338"
+         y="148.70644"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:FreeSans;-inkscape-font-specification:FreeSans;fill:#0070a8;fill-opacity:1">myPortfolio</tspan></text>
+  </g>
+</svg>
