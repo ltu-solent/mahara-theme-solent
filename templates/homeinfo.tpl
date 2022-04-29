@@ -24,6 +24,7 @@
                     <ul>
                         <li><a href="https://manual.mahara.org/en/21.10/portfolio/pages.html?highlight=collection#add-a-collection" target="_blank">Create a collection of pages</a></li>
                         <li><a href="https://manual.mahara.org/en/21.10/portfolio/pages.html#copy-a-portfolio-by-searching-for-it" target="_blank">Copy a collection provided by your tutor</a></li>
+                        <li><a href="https://solent.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=eb923655-e7c7-4845-b2b6-ae7100b25953" target="_blank">Overview video of how Mahara works</a></li>
                     </ul>
                 </div>
             </div>
