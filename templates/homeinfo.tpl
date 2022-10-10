@@ -36,10 +36,10 @@
                 <div class="grid-bottom">
                     <br><h5>Example portfolios</h5>
                     <ul>
-                        <li><a href="https://mahara.solent.ac.uk/view/view.php?t=HjklXu1Z8e5oaOEtKrnD" target="_blank">Rob - Architectural Technology</a></li>					
-                        <li><a href="https://mahara.solent.ac.uk/view/view.php?t=yxpgnbW7fsK5GkcEZzjH" target="_blank">Olivia - PR and Communication</a></li>
-                        <li><a href="https://mahara.solent.ac.uk/view/view.php?t=Z5rY8yOvtqlD7CsaW0eh" target="_blank">Chloe - PR and Communication</a></li>
-                        <li><a href="https://mahara.solent.ac.uk/user/view.php?id=8666" target="_blank">Adam - Sports Psychology</a></li>
+                        <li><a href="https://myportfolio.solent.ac.uk/view/view.php?t=HjklXu1Z8e5oaOEtKrnD" target="_blank">Rob - Architectural Technology</a></li>					
+                        <li><a href="https://myportfolio.solent.ac.uk/view/view.php?t=yxpgnbW7fsK5GkcEZzjH" target="_blank">Olivia - PR and Communication</a></li>
+                        <li><a href="https://myportfolio.solent.ac.uk/view/view.php?t=Z5rY8yOvtqlD7CsaW0eh" target="_blank">Chloe - PR and Communication</a></li>
+                        <li><a href="https://myportfolio.solent.ac.uk/user/view.php?id=8666" target="_blank">Adam - Sports Psychology</a></li>
                     </ul>
                 </div>
             </div>		
