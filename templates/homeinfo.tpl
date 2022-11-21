@@ -7,10 +7,10 @@
                 <div class="grid-bottom">
                     <br><h5>Creating and editing content</h5>
                     <ul>
-                        <li><a href="https://manual.mahara.org/en/21.10/content/content.html" target="_blank">Create content ready to add to a page</a></li>
+                        <li><a href="https://manual.mahara.org/en/21.10/create.html" target="_blank">Create content ready to add to a page</a></li>
                         <li><a href="https://manual.mahara.org/en/21.10/portfolio/pages.html#add-a-page" target="_blank">Create a page</a></li>
-                        <li><a href="https://manual.mahara.org/en/21.10/portfolio/page_editor.html" target="_blank">Edit a page</a></li>
-                        <li><a href="https://manual.mahara.org/en/21.10/portfolio/page_editor.html#content-chooser" target="_blank">Add content to a page</a></li>
+                        <li><a href="https://manual.mahara.org/en/21.10/portfolio/pages.html#edit-a-page" target="_blank">Edit a page</a></li>
+                        <li><a href="https://manual.mahara.org/en/21.10/portfolio/pages.html#add-content-to-a-page" target="_blank">Add content to a page</a></li>
                     </ul>
                 </div>
             </div>			
