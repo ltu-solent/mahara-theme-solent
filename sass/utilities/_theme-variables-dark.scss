@@ -1,0 +1,13 @@
+/*
+ Theme colours should be defined here, and (ideally) used only in the global
+ variables files (bootstrap-variables, custom-variables)
+*/
+
+$theme-text-color: #333; // black
+$theme-text-midtone-color: #444; // dark grey
+
+$theme-primary-color: #556d32; // mid green
+$theme-primary-color-dark: scale-color($theme-primary-color, $lightness: 50%) !default;
+
+$theme-text-color-dark: #dee2e6; // is $gray-300;
+$theme-text-midtone-color-dark: #ccc;

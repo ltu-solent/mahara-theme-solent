@@ -11,7 +11,6 @@
  */
 
 /** Import your theme based variables (colors, fonts, padding, etc) */
-@import "../../raw/sass/utilities/theme-variables";
 @import "utilities/theme-variables"; // Import our theme variables
 // @import "utilities/theme-variables-dark"; // Import our theme variables for dark mode
 
@@ -28,13 +27,10 @@
 // @import "../../<your parent theme name>/sass/utilities/custom-variables";
 // @import "../../<your parent theme name>/sass/utilities/custom-variables-dark"; // (note only raw and default currently has dark mode)
 
-@import "utilities/bootstrap-variables"; // Set up your own bootstrap variables (note you need to make a copy of this file from the parent theme first)
-// @import "utilities/bootstrap-variables-dark"; // Dark mode bootstrap variables (note you need to make a copy of this file from the parent theme first)
-
-@import "../../../../node_modules/bootstrap/scss/bootstrap";
-
-@import "utilities/custom-variables"; // Set up your own custom variables  (note you need to make a copy of this file from raw first)
-// @import "utilities/custom-variables-dark"; // Dark mode custom variables (note you need to make a copy of this file from the parent theme first)
+//@import "utilities/bootstrap-variables"; // Set up your own bootstrap variables (note you need to make a copy of this file from the parent theme first)
+//@import "utilities/bootstrap-variables-dark"; // Dark mode bootstrap variables (note you need to make a copy of this file from the parent theme first)
+//@import "utilities/custom-variables"; // Set up your own custom variables  (note you need to make a copy of this file from raw first)
+//@import "utilities/custom-variables-dark"; // Dark mode custom variables (note you need to make a copy of this file from the parent theme first)
 
 // Import raw default variables (colors, fonts, padding, etc)
 @import "../../raw/sass/style";

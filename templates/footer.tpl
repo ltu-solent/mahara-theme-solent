@@ -81,13 +81,13 @@
             <div class="row-footer">
                 <nav class="nav flex-row justify-content-end social-wrap">
                     <a class="btn btn-primary btn-rounded X mr-2" role="button" href="https://twitter.com/solentofficial" target="_blank">
-                        <i class="fab icon-x"></i> X</a>
+                        <i class="fab fa-x-twitter"></i> X</a>
                     <a class="btn btn-primary btn-rounded facebook mr-2" href="https://www.facebook.com/solentuniversity" target="_blank">
-                        <i class="fab icon-facebook"></i> Facebook</a>
+                        <i class="fab fa-facebook"></i> Facebook</a>
                     <a class="btn btn-primary btn-rounded youtube mr-2" href="https://www.youtube.com/user/SolentUniOfficial" target="_blank">
-                        <i class="fab icon-youtube"></i> Youtube</a>
+                        <i class="fab fa-youtube"></i> Youtube</a>
                     <a class="btn btn-primary btn-rounded linkedin" href="https://www.linkedin.com/edu/southampton-solent-university-12644" target="_blank">
-                        <i class="fab icon-linkedin"></i> LinkedIn</a>
+                        <i class="fab fa-linkedin"></i> LinkedIn</a>
                 </nav>
                 <nav class="nav">
                     
@@ -96,7 +96,7 @@
                         {foreach from=$FOOTERMENU item=item name=footermenu}
                             <li>
                                 {if $item.fullurl}
-                                {$item.fullurl|safe}
+                                {$item.fullurl nofilter}
                                 {else}
                                 <a href="{$item.url}" class="nav-link">{$item.title}</a>
                                 {/if}
@@ -112,6 +112,6 @@
         {mahara_performance_info}
     </div> 
 </footer><!-- footer-wrap -->
-{if $ADDITIONALHTMLFOOTER}{$ADDITIONALHTMLFOOTER|safe}{/if}
+{if $ADDITIONALHTMLFOOTER}{$ADDITIONALHTMLFOOTER nofilter}{/if}
 </body>
 </html>
