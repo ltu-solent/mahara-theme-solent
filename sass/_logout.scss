@@ -3,7 +3,14 @@
     .main-content {
         background-image: url(../images/login.png);
         background-repeat: no-repeat;
-        max-width: 100%;
+        #main-column-container {
+            background-color: $white;
+            padding: $card-spacer-y $card-spacer-x;
+            border-radius: $card-border-radius;
+            h1, h4 {
+                color: $theme-text-color;
+            }
+        }
         padding-bottom: 30px;
         h1, h4 {
             color: $white;
