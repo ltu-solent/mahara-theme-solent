@@ -1,4 +1,4 @@
-
+{if $USER->is_logged_in()}
 <div class="homeinfo-container">
     <div class="flex-d row align-items-stretch">
         <div class="homeinfo-inner col-sm-6 col-md-4">
@@ -84,3 +84,4 @@
         </div>
     </div>
 </div>
+{/if}

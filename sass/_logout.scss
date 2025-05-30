@@ -4,7 +4,7 @@
         background-image: url(../images/login.png);
         background-repeat: no-repeat;
         #main-column-container {
-            background-color: $white;
+            background-color: rgba($white, .9);
             padding: $card-spacer-y $card-spacer-x;
             border-radius: $card-border-radius;
             h1, h4 {

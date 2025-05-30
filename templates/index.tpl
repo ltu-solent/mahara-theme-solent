@@ -5,7 +5,7 @@
     {/if}
 {/if}
 {$page_content|clean_html nofilter}
-{if $showhomepageinfo && $USER->is_logged_in()}
+{if $showhomepageinfo}
     {include file="homeinfo.tpl" url=$url}
 {/if}
 {if $dashboardview}
