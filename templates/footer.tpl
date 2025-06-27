@@ -49,8 +49,8 @@
                     <h3>Support</h3>
                     <nav class="nav flex-column">
                         <a class="nav-link" href="https://students.solent.ac.uk/student-hub" target="_blank">Student Hub</a>
-                        <a class="nav-link" href="https://portal.solent.ac.uk/it-and-media/it-and-media.aspx" target="_blank">IT & Media</a>
-                        <a class="nav-link" href="https://portal.solent.ac.uk/it-and-media/print-service/print-service.aspx" target="_blank">Printing</a>
+                        <a class="nav-link" href="https://learn.solent.ac.uk/help" target="_blank">Technical Support</a>
+                        <a class="nav-link" href="https://students.solent.ac.uk/studying/print-service" target="_blank">Printing</a>
                         <a class="nav-link" href="https://students.solent.ac.uk/studying/what-we-expect-from-you/extenuating-circumstances" target="_blank">Extenuating Circumstances</a>
                     </nav>
                 </div>
@@ -69,7 +69,7 @@
                     <nav class="nav flex-column">
                         <a class="nav-link" href="https://www.solent.ac.uk/disclaimer" target="_blank">Disclaimer &amp; Take Down Policy</a>
                         <a class="nav-link" href="https://www.solent.ac.uk/disclaimer/cookies" target="_blank">Cookies</a>
-                        <a class="nav-link" href="https://learn.solent.ac.uk/terms" target="_blank">Terms &amp; Conditions</a>                              
+                        <a class="nav-link" href="https://learn.solent.ac.uk/terms" target="_blank">Terms &amp; Conditions</a>
                         <a class="nav-link" href="https://www.solent.ac.uk/accessibility/accessibility.aspx" target="_blank">Accessibility</a>
                         <a class="nav-link" href="https://manual.mahara.org/en/25.04/" target="_blank">Mahara Documentation</a>
                     </nav>
