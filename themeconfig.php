@@ -18,15 +18,15 @@ $theme->displayname = 'Solent';
 you will need to uncomment the import lines with the path "../../<your parent theme name>/sass
 in sass/style.scss and change the value <your parent theme name> to the folder name of the
 subtheme that you use as basis. */
-$theme->parent = 'modern';
+$theme->parent = 'raw';
 
 /* If we are using normal CSS, this should be false. If we are using SASS, it should be true. */
 $theme->overrideparentcss = false;
 
-$theme->themeaddressbar = '#972828';
+$theme->themeaddressbar = '#fff';
 
 /* TRUE if your theme includes dark mode, FALSE if you don't want dark mode to be allowed */
-$theme->allowdarkmode = true;
+$theme->allowdarkmode = false;
 
 /**
  * The following themeconfig options are available. If you make new themeconfig
