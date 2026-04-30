@@ -1,10 +1,10 @@
-{include file="header.tpl"}
+{include file="header.tpl" headertype='page'}
 {if $adminactionrequired}
     {if $cleandbforisolationform}
         {include file="adminactionrequired.tpl"}
     {/if}
 {/if}
-{$page_content|clean_html nofilter}
+
 {if $showhomepageinfo}
     {include file="homeinfo.tpl" url=$url}
 {/if}

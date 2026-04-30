@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('../fonts/fa-brands-400.woff2') format('woff2'),
+         url('../fonts/fa-brands-400.tff') format('tff');
+}
+
+.fab,
+.fa-brands {
+  font-family: 'Font Awesome 6 Brands';
+  display: inline-block;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  text-rendering: auto;
+  font-size: 1.25em;
+  font-style: normal;
+}
+
+.fa-facebook::before {
+    content: "\f09a";
+}
+
+.fa-x-twitter::before {
+    content: "\e61b";
+}
+
+.fa-youtube::before {
+    content: "\f167";
+}
+
+.fa-linkedin::before {
+    content: "\f08c";
+}
+
+.fa-bluesky:before {
+    content: "\e671";
+}

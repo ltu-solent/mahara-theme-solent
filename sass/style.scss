@@ -14,9 +14,13 @@
 @import "utilities/theme-variables"; // Import our theme variables
 // @import "utilities/theme-variables-dark"; // Import our theme variables for dark mode
 
-@import "../../raw/sass/utilities/bootstrap-variables";
+@import "../../raw/sass/utilities/theme-variables";
 // @import "../../raw/sass/utilities/bootstrap-variables-dark"; // Introduce dark variable alternatives
-@import "../../raw/sass/utilities/custom-variables";
+
+// Inherit Bootstrap theme values with !default
+@import "../../../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../raw/sass/utilities/mahara-variables";
 // @import "../../raw/sass/utilities/custom-variables-dark"; // Introduce dark variable alternatives
 
 /** If your parent theme is a subtheme for example, Modern, Default, Primaryschool

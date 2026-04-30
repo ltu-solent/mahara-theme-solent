@@ -1,7 +1,8 @@
-{if $USER->is_logged_in()}
-<div class="homeinfo-container">
-    <p>For an introduction to MyPortfolio see our <a href="https://learn.solent.ac.uk/myportfolio/overview" target="_blank">overview video</a></p>
-    <div class="flex-d row align-items-stretch">
+{if $LOGGEDIN}
+    <p class="d-block">For an introduction to MyPortfolio see our <a href="https://learn.solent.ac.uk/myportfolio/overview" target="_blank">overview video</a></p>
+<div id="home-info-container"
+    class="dashboard-widget-container d-flex gap-2 flex-column flex-sm-row justify-content-between align-items-stretch">
+    <div class="dashboard-widget d-flex align-items-stretch mb-2">
         <div class="homeinfo-inner col-sm-6 col-md-4">
             <div class="grid-item">
                 <div class="grid-top" style="background-image: url('theme/solent/images/cards/content.png');"></div>
@@ -44,4 +45,8 @@
         </div>
     </div>
 </div>
+{/if}
+
+{if $STATIC_PAGE_CONTENT && $static_page_content_type == "loggedouthome"}
+    <p class="mt-2">{$STATIC_PAGE_CONTENT|raw}</p>
 {/if}
