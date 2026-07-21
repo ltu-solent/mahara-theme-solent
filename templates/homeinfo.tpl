@@ -9,10 +9,10 @@
                 <div class="grid-bottom">
                     <br><h5>Creating content</h5>
                     <ul>
-                        <li><a href="https://manual.mahara.org/en/25.04/create.html" target="_blank">Create content</a></li>
-                        <li><a href="https://manual.mahara.org/en/25.04/portfolio/pages.html#add-a-page-and-edit-its-settings" target="_blank">Create a page</a></li>
-                        <li><a href="https://manual.mahara.org/en/25.04/portfolio/pages.html#create-a-collection" target="_blank">Create your portfolio</a></li>
-                        <li><a href="https://manual.mahara.org/en/25.04/portfolio/pages.html#copy-a-portfolio-by-searching-for-it" target="_blank">Copy a collection provided by your tutor</a></li>
+                        <li><a href="https://manual.mahara.org/en/26.04/create.html" target="_blank">Create content</a></li>
+                        <li><a href="https://manual.mahara.org/en/26.04/portfolio/pages.html#add-a-page-and-edit-its-settings" target="_blank">Create a page</a></li>
+                        <li><a href="https://manual.mahara.org/en/26.04/portfolio/pages.html#create-a-collection" target="_blank">Create your portfolio</a></li>
+                        <li><a href="https://manual.mahara.org/en/26.04/portfolio/pages.html#copy-a-portfolio-by-searching-for-it" target="_blank">Copy a collection provided by your tutor</a></li>
                     </ul>
                 </div>
             </div>			
@@ -24,8 +24,8 @@
                 <div class="grid-bottom">
                     <br><h5>Editing content</h5>
                     <ul>
-                        <li><a href="https://manual.mahara.org/en/25.04/portfolio/pages.html#edit-a-page" target="_blank">Edit a page</a></li>
-                        <li><a href="https://manual.mahara.org/en/25.04/portfolio/pages.html#add-content-to-a-page" target="_blank">Add content to a page</a></li>
+                        <li><a href="https://manual.mahara.org/en/26.04/portfolio/pages.html#edit-a-page" target="_blank">Edit a page</a></li>
+                        <li><a href="https://manual.mahara.org/en/26.04/portfolio/pages.html#add-content-to-a-page" target="_blank">Add content to a page</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     <br><h5>Submitting and sharing portfolios</h5>
                     <ul>
                         <li><a href="https://learn.solent.ac.uk/submit-myportfolio" target="_blank">How to submit a portfolio for assessment in SOL</a></li>
-                        <li><a href="https://manual.mahara.org/en/25.04/portfolio/pages.html#share-the-portfolio" target="_blank">Give users access to my portfolio using secret URLs</a></li>
+                        <li><a href="https://manual.mahara.org/en/26.04/portfolio/pages.html#share-the-portfolio" target="_blank">Give users access to my portfolio using secret URLs</a></li>
                     </ul>
                 </div>
             </div>	
